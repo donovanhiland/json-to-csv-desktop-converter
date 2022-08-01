@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    ".erb/**/*",
+    "src/**/*",
+    "scripts/*",
+    "typings/*",
+    ".eslintrc.js",
+    "electron-builder.config.js",
+    "jest.config.js",
+    "postcss.config.js"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "json-to-csv",
+  "version": "1.0.0",
+  "description": "Convert json files to csv",
+  "license": "MIT",
+  "author": {
+    "name": "Donovan Hiland",
+    "url": "JSONtoCSV"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "yarn electron-rebuild && yarn link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {}
+}
